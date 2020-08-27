@@ -1,5 +1,6 @@
 require 'minitest/autorun'
 require 'minitest/pride'
+require './lib/fibonacci'
 
 class FibonacciTest < Minitest::Test
   def setup
