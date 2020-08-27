@@ -4,12 +4,27 @@ class Fibonacci
   def position_classic_recursive(position_number)
     if position_number < 0
       'Invalid position number!'
-    elsif position_number == 0
-      return 0
-    elsif position_number == 1
-      return 1
+    elsif position_number == 0 || position_number == 1
+      return position_number
     else
-      return position_classic_recursive(position_number - 1) + position(position_number - 2)
+      one_back = position_classic_recursive(position_number - 1)
+      two_back = position_classic_recursive(position_number - 2)
+      return one_back + two_back
     end
+  end
+
+  # this method is fast and can support large numbers
+  def position_hash_recursive(position_number)
+    fib_number = Hash.new do |this_hash, key|
+      if key < 0
+        this_hash[key] = "Invalid position number!"
+      elsif key == 0 || key == 1
+        this_hash[key] = key
+      else
+        this_hash[key] = this_hash[key - 1] + this_hash[key - 2]
+      end
+    end
+
+    fib_number[position_number]
   end
 end

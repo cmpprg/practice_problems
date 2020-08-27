@@ -12,7 +12,7 @@ class FibonacciTest < Minitest::Test
   end
 
   def test_fibonacci_classic_recursive_method_works
-    assert_equal 'Invalid position number!', @fib.position(-1)
+    assert_equal 'Invalid position number!', @fib.position_classic_recursive(-1)
     assert_equal 0, @fib.position_classic_recursive(0)
     assert_equal 1, @fib.position_classic_recursive(1)
     assert_equal 1, @fib.position_classic_recursive(2)
@@ -25,7 +25,7 @@ class FibonacciTest < Minitest::Test
   end
 
   def test_fibonacci_hash_method_works
-    assert_equal 'Invalid position number!', @fib.position(-1)
+    assert_equal 'Invalid position number!', @fib.position_hash_recursive(-1)
     assert_equal 0, @fib.position_hash_recursive(0)
     assert_equal 1, @fib.position_hash_recursive(1)
     assert_equal 1, @fib.position_hash_recursive(2)
