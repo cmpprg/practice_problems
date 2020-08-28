@@ -1,0 +1,194 @@
+<h1>HTML Exporation</h1>
+
+<article class="no-element-content">
+  Here is some content without 'tags' so that we can see what happens.
+
+  Even though I put spaces in my code
+
+  the browser still doesn't know that I want seperate paragraphs, because I
+  have not instructed it to do so.
+
+  Tags Are Important to declare to the browser what we want.
+</article>
+
+<article class="headers-and-paragraph">
+  <h1>h1 Headline</h1>
+  <h2>h2 Headline</h2>
+  <h3>h3 Headline</h3>
+  <h4>h4 Headline</h4>
+  <h5>h5 Headline</h5>
+  <h6>h6 Headline</h6>
+  <p>paragraph element</p>
+</article>
+
+<article class="bold-and-italics">
+  <h2>Bold and Italics</h2>
+
+  <p><em>emphasis / italicized (semantic)</em></p>
+  <p><i>italicized (non-semantic, should only be used as a last resort)</i></p>
+  <p><strong>bold (sematic)</strong></p>
+  <p><b>bold (non-semantic, should only be used as a last resort)</b></p>
+<!-- You really shouldn't need to use 'i' or 'b'. If you want to change the
+     look of some text, you should be using CSS, Which you can find in a
+     different exploration -->
+
+  <p>My name is Ryan Camp</p>
+  <p>This is the third paragraph of the article.</p>
+</article>
+
+<article class="lists">
+  <h2>Lists</h2>
+  <h3>Unordered List</h3>
+  <ul>
+    <li>unordered list item 1</li>
+    <li>unordered list item 2</li>
+    <li>unordered list item 3</li>
+  </ul>
+
+  <h3>Ordered List</h3>
+  <ol>
+    <li>ordered list item 1</li>
+    <li>ordered list item 2</li>
+    <li>ordered list item 3</li>
+  </ol>
+
+  <h3>definition list / description list</h3>
+  <dl>
+    <!-- definition term -->
+    <dt>Term 1</dt>
+      <!-- definition description -->
+      <dd>A description / definition of Term 1. When I see this I think of a dictionary</dd>
+      <!-- you can have more than one <dd> per <dt> -->
+      <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
+
+    <dt>Term 2</dt>
+      <dd>A description / definition of Term 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
+
+    <dt>Term 3</dt>
+      <dd>A description / definition of Term 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
+  </dl>
+</article>
+
+<article class="quotes">
+  <h2>Quotes</h2>
+  <h3>Block quotes</h3>
+  <blockquote>
+    <p>Anyone who has lost track of time when using a computer knows the propensity to dream, the urge to make dreams come true and the tendency to miss lunch.</p>
+    <cite>- Tim Berners-Lee</cite>
+  </blockquote>
+
+  <h3>Inline quotes using 'q' element</h3>
+  <p>The man who's brainchild is the World Wide Web, Tim Berners-Lee, once said <q>Anyone who has lost track of time when using
+     a computer knows the propensity to dream, the urge to make dreams come true and the tendency to miss lunch.</q></p>
+</article>
+
+<article class="inline-vs-blocklevel-elements">
+  <h2>Inline vs Block-Level elements</h2>
+  <h3>Inline</h3>
+  <p>List of a couple of inline elements</p>
+  <ul>
+    <li>&lt;q&gt;</li>
+    <li>&lt;strong&gt;</li>
+    <li>&lt;b&gt;</li>
+    <li>&lt;i&gt;</li>
+    <li>&lt;em&gt;</li>
+  </ul>
+  <p>Inline elements will keep the content inline and not create a newline</p>
+
+  <h3>Block-Level</h3>
+  <p>list of a couple block-level elements</p>
+  <ul>
+    <li>&lt;blockquote&gt;</li>
+    <li>&lt;p&gt;</li>
+    <li>&lt;ul&gt;</li>
+    <li>&lt;ol&gt;</li>
+    <li>&lt;dl&gt;</li>
+  </ul>
+  <p>Block level elements will create a new line and occupy its own block for it's content.</p>
+
+  <p>You can use CSS to switch any elements layout from 'inline' to 'block' and visa versa.</p>
+</article>
+
+<article class="dates-and-times">
+  <h2>Dates and Times</h2>
+  <p>My birthday is <time datetime="1988-03-30">March 30, 1988</time> at <time datetime="16:25">4:25 pm</time></p>
+  <p>If your looking at the code we used a 'datetime' attribute to tell the computer what date my birthday is on.
+  An attribute goes inside the opening tag of an element and signifies some attribute of that element.</p>
+  <p>There are many formats of content that can go into datetime covering:</p>
+
+  <ul>
+    <li>date</li>
+    <li>datetime</li>
+    <li>time</li>
+    <li>duration</li>
+  </ul>
+
+  <p>For a list of some of these formats please visit:<a href="https://www.w3schools.com/tags/att_time_datetime.asp">w3schools</a></p>
+</article>
+
+<article class="code-pre-and-br">
+  <h2>code, pre, and br</h2>
+  <h3>&lt;code&gt;</h3>
+  <p>if you want a code snippet to stand out you can use the 'code' element.
+  <code>10.times { puts 'hello world' }</code> This is a code snippet in ruby that
+   would disply 'hello world' to the terminal 10 times.</p>
+
+  <h3>&lt;br&gt;</h3>
+  <p>the line break element will break lines inside a paragraph element</p>
+  <p>if
+    i
+    want
+    each
+    thing
+    seperated it won't do it automatically.
+  </p>
+  <p> Instead <br>
+      I <br>
+      will <br>
+      need <br>
+      to <br>
+      break <br>
+      each <br>
+      line <br>
+</p>
+
+<h3>&lt;pre&gt;</h3>
+<p>the pre tag allows you to control when the browser pays attention to the spacing
+  and tabing for an entire group of text</p>
+
+<p>
+I want
+      this todo
+                What i want
+</p>
+<pre>
+I want
+      this todo
+                What i want
+</pre>
+
+<pre>
+With &lt;pre&gt; and &lt;code&gt; put together I can now represent
+multi line code snippets. Here is the same snippet with a do block.
+
+  <code>
+    10.times do
+      puts 'hello world'
+    end
+  </code>
+
+There you have it...
+</pre>
+</article>
+
+<article class="superscripts-subscripts">
+  <h2>Superscripts, Subscripts and small pring.</h2>
+  <h3>Subscript &lt;sub&gt;</h3>
+  <p>H<sub>2</sub>0</p>
+
+  <h3>Superscript &lt;sup&gt;</h3>
+  <p>2<sup>30</sup> = 1,073,741,824</p>
+
+  <h3>Small &lt;small&gt;</h3>
+  <small>© 2020 Fancy Company</small>
+</article>
