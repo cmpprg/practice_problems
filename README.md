@@ -1,4 +1,4 @@
-# practice_problems
+# Practice Problems
 
 I will be using this repo to store all of my non-deployed / practice scripts.  
 I hope to explore different topics, such as linked lists and binary trees in this repo.  
